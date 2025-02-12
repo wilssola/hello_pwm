@@ -10,14 +10,14 @@ Este projeto demonstra o uso de PWM (Pulse Width Modulation) em um microcontrola
 build/
 CMakeLists.txt
 diagram.json
-hello_pwm.c
+pwm.c
 pico_sdk_import.cmake
 wokwi.toml
 ```
 
 ## Arquivos Principais
 
-- hello_pwm.c: Contém o código fonte principal que configura e controla o PWM para o LED e o servo motor.
+- pwm.c: Contém o código fonte principal que configura e controla o PWM para o LED e o servo motor.
 - CMakeLists.txt: Arquivo de configuração do CMake para compilar o projeto.
 - diagram.json: Descreve a conexão dos componentes no circuito.
 - pico_sdk_import.cmake: Importa o SDK do Raspberry Pi Pico.
@@ -48,7 +48,7 @@ wokwi.toml
     ```sh
     make
     ```
-4. Carregue o binário gerado (`hello_pwm.uf2`) no Raspberry Pi Pico.
+4. Carregue o binário gerado (`pwm.uf2`) no Raspberry Pi Pico.
 
 ## Código Fonte
 
