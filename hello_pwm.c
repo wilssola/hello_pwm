@@ -22,6 +22,7 @@ void wrap() {
     pwm_set_gpio_level(PIN_LED, level * level); // Define o nível de iluminação do LED (PWM) de forma quadrática (mais suave)
 }
 
+// Configuração do PWM para o LED com interrupção
 uint led_pwm_setup_irq() {
     gpio_set_function(PIN_LED, GPIO_FUNC_PWM); // Configurar o pino GPIO para a função de PWM
     
@@ -39,6 +40,7 @@ uint led_pwm_setup_irq() {
     return slice_num;
 }
 
+// Configuração do PWM para o LED sem interrupção
 uint servo_pwm_setup() {
     gpio_set_function(PIN_SERVO, GPIO_FUNC_PWM);
     
