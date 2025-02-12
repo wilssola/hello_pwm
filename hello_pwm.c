@@ -33,7 +33,7 @@ uint led_pwm_setup_irq() {
     irq_set_enabled(PWM_IRQ_WRAP, true); // Habilitar a interrupção de wrap
 
     pwm_config config = pwm_get_default_config(); // Obter a configuração padrão do PWM
-    pwm_config_set_clkdiv(&config, 10.0f); // Define o divisor de clock do PWM
+    pwm_config_set_clkdiv(&config, 2.0f); // Define o divisor de clock do PWM
     pwm_init(slice_enum, &config, true); // Inicializa o slice do PWM com a configuração definida
 
     return slice_enum;
